@@ -2,28 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Snake Game</title>
-  <style>
-    body { text-align:center; font-family:sans-serif; padding-top:50px; background:#111; color:#0f0; }
-  </style>
-</head>
-<body>
-  <h1>My Snake Game is Live! 🐍</h1>
-  <p>Victor, it worked!</p>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Snake</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="canvas"></canvas>
-  <script src="render.js"></script><!-- defines canvas, ctx, draw() -->
-  <script src="input.js"></script><!-- attaches keyboard + touch listeners -->
-  <script src="game.js"></script> <!-- state, loop, boot -->
-
+  <h1>Snake Game 🐍</h1>
+  <canvas id="canvas" width="400" height="400"></canvas>
+  <p>Use Arrow Keys or Swipe</p>
+  
+  <script src="render.js"></script>
+  <script src="input.js"></script>
+  <script src="game.js"></script>
 </body>
 </html>
