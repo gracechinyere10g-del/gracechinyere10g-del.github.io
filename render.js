@@ -1,0 +1,18 @@
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+const gridSize = 20;
+
+function draw(game) {
+  ctx.fillStyle = '#000';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  // Draw snake
+  ctx.fillStyle = '#0f0';
+  game.snake.forEach(part => {
+    ctx.fillRect(part.x * gridSize, part.y * gridSize, gridSize - 2, gridSize - 2);
+  });
+
+  // Draw food
+  ctx.fillStyle = '#f00';
+  ctx.fillRect(game.food.x * gridSize, game.food.y * gridSize, gridSize - 2, gridSize - 2);
+                     }
